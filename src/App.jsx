@@ -3,6 +3,7 @@ import ClassSample from './Samples/ClassSample'
 import DefaultPropsSample from './Samples/DefaultProps'
 import PropTypesSample from './Samples/PropTypes'
 import ReactChildren from './Samples/ReactChildren'
+import HigherOrderComponent from './Samples/HigherOrderComponent'
 
 const App = () => {
   return (
@@ -32,4 +33,12 @@ const App = () => {
   )
 }
 
-export default App;
+const HOCExample = (props) => {
+  console.log(props)
+  return (
+    <h1>{props.favoriteNumber}</h1>
+  )
+}
+
+const HOC = HigherOrderComponent(HOCExample)
+export default HOC;
