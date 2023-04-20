@@ -3,6 +3,7 @@ import ClassSample from './Samples/ClassSample'
 import DefaultPropsSample from './Samples/DefaultProps'
 import PropTypesSample from './Samples/PropTypes'
 import ReactChildren from './Samples/ReactChildren'
+import HigherOrderComponent from "./Samples/HigherOrderComponent"
 
 const App = () => {
   return (
@@ -24,14 +25,12 @@ const App = () => {
         <PropTypesSample cardColor="lightblue"/>
       </> */}
 
-      <>
-      <ReactChildren>
+      {/* <ReactChildren>
         <h1>This is example of React children</h1>
-      </ReactChildren>
-      </>
+      </ReactChildren> */}
 
     </>
   )
 }
 
-export default App
+export default App;
