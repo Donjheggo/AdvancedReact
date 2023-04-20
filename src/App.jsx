@@ -2,7 +2,7 @@ import React from 'react'
 import ClassSample from './Samples/ClassSample'
 import DefaultPropsSample from './Samples/DefaultProps'
 import PropTypesSample from './Samples/PropTypes'
-import DefaultProps_PropTypes from './Samples/DefaultProps_PropTypes'
+import ReactChildren from './Samples/ReactChildren'
 
 const App = () => {
   return (
@@ -25,9 +25,10 @@ const App = () => {
       </> */}
 
       <>
-      <DefaultProps_PropTypes src="/images/vite.svg" borderRadius='10px'/>
+      <ReactChildren>
+        <h1>This is example of React children</h1>
+      </ReactChildren>
       </>
-
 
     </>
   )
