@@ -3,7 +3,6 @@ import ClassSample from './Samples/ClassSample'
 import DefaultPropsSample from './Samples/DefaultProps'
 import PropTypesSample from './Samples/PropTypes'
 import ReactChildren from './Samples/ReactChildren'
-import HigherOrderComponent from "./Samples/HigherOrderComponent"
 
 const App = () => {
   return (
