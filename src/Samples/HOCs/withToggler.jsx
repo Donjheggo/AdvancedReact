@@ -10,7 +10,7 @@ class Toggle extends React.Component{
     render(){
         const {component: Component, defaultValue, ...props} = this.props
         return (
-            <Component on={this.state.on} toggle={this.toggle} {...this.props}/>
+            <Component on={this.state.on} toggle={this.toggle} {...props}/>
         )
     }
 }
