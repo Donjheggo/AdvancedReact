@@ -4,6 +4,8 @@ import DefaultPropsSample from './Samples/DefaultProps'
 import PropTypesSample from './Samples/PropTypes'
 import ReactChildren from './Samples/ReactChildren'
 import HigherOrderComponent from './Samples/HigherOrderComponent'
+import AdvancedHOC from "./Samples/AdvancedHOC"
+import AdvancedHOCTwo from "./Samples/AdvancedHOCTWO"
 
 const App = () => {
   return (
@@ -33,12 +35,21 @@ const App = () => {
   )
 }
 
-const HOCExample = (props) => {
-  console.log(props)
+// const HOCExample = (props) => {
+//   console.log(props)
+//   return (
+//     <h1>{props.favoriteNumber}</h1>
+//   )
+// }
+// const HOC = HigherOrderComponent(HOCExample)
+
+const AdvancedHOCSample = () => {
   return (
-    <h1>{props.favoriteNumber}</h1>
+    <>
+    <AdvancedHOC/>
+    <AdvancedHOCTwo/>
+    </>
   )
 }
 
-const HOC = HigherOrderComponent(HOCExample)
-export default HOC;
+export default AdvancedHOCSample;
